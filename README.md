@@ -1,17 +1,97 @@
-About This Game:
+# 👾 Space Invaders — Muhammad Ibrahim
 
-- This is a classic **Space Invaders** game built using **Object-Oriented Programming (OOP)** in pure JavaScript with no external libraries.
-- It has **9 OOP classes** including Player, Enemy, Bullet, EnemySwarm, Star, Explosion and GameEngine all working together.
-- The player controls a **spaceship** using arrow keys and shoots at three alien types — Crab, Squid and Bug — across **3 waves**.
-- Each alien type has **different points** (30, 20, 10), movement patterns and shooting behaviour, and the swarm gets faster as aliens are destroyed.
-- The game includes a **live score, hi-score tracker, 3 lives, glowing explosions** and a scrolling starfield — all built from scratch using canvas.
+A fully playable **Space Invaders** game built with pure **JavaScript OOP** and HTML5 Canvas.
+No frameworks. No libraries. Just clean Object-Oriented code.
 
-Special Thanks — Sir Fahad Qureshi:
+---
 
-- A very special thank you to **Sir Fahad Qureshi** for being an absolutely wonderful and dedicated teacher.
-- His **clear explanations, patience and passion** for teaching programming made understanding OOP concepts easy and enjoyable.
-- Sir Fahad Qureshi does not just teach code — he **builds student confidence** and encourages them to think like real developers.
-- Every concept used in this project — classes, inheritance, encapsulation, polymorphism — was learned under **his guidance and support**.
-- This project is a direct result of his hard work and teaching, and I am truly grateful to have a teacher as great as **Sir Fahad Qureshi**.
+## 🎮 How to Play
 
-- <img width="1528" height="740" alt="image" src="https://github.com/user-attachments/assets/d61b8b45-06a3-4250-bcaa-a0b281307fad" />
+- **Arrow Keys / A D** — Move spaceship left and right
+- **SPACE** — Shoot bullets
+- **Mobile** — Use the on-screen LEFT / FIRE / RIGHT buttons
+- Survive all **3 waves** of aliens to win
+
+---
+
+## 🚀 How to Run
+
+1. Download or clone this repository
+2. Open **index.html** in any browser
+3. Press **SPACE** or tap **START** — that's it
+
+No terminal. No npm. No setup needed.
+
+---
+
+## 🧱 OOP Classes Used
+
+| # | Class | Purpose |
+|---|-------|---------|
+| 1 | `Vector2` | 2D math helper — stores x and y position |
+| 2 | `GameObject` | Base class — gives collision detection to all objects |
+| 3 | `Bullet` | Projectile fired by player or enemy |
+| 4 | `Player` | Hero spaceship — movement, lives, shooting |
+| 5 | `Enemy` | Alien fighter — 3 types (Crab, Squid, Bug) |
+| 6 | `EnemySwarm` | Manages the alien grid, movement and direction |
+| 7 | `Star` | Single scrolling background star |
+| 8 | `Explosion` | Particle burst when something is destroyed |
+| 9 | `GameEngine` | Master game loop — owns and controls everything |
+
+---
+
+## 👾 Enemy Types & Points
+
+| Enemy | Points | Description |
+|-------|--------|-------------|
+| 🦀 Crab | 30 pts | Largest alien — top row — orange |
+| 🦑 Squid | 20 pts | Medium alien — middle rows — purple |
+| 🐛 Bug | 10 pts | Smallest alien — bottom rows — green |
+
+---
+
+## ⚙️ OOP Principles Applied
+
+- **Encapsulation** — Each class owns its own data and behaviour
+- **Inheritance** — Bullet, Player and Enemy all extend GameObject
+- **Abstraction** — GameEngine calls simple methods without knowing internals
+- **Polymorphism** — draw() works differently on each class
+
+---
+
+## 📁 Project Structure
+
+```
+space-invaders/
+│
+├── index.html        ← Full game (HTML + CSS + JavaScript in one file)
+├── README.md         ← This file
+└── LICENSE           ← MIT License
+```
+
+---
+
+## 🙏 Special Thanks
+
+A very special thank you to **Sir Fahad Qureshi** for being an outstanding teacher.
+
+- His **clear explanations** made OOP concepts easy to understand
+- He taught not just code but how to **think like a developer**
+- Every class in this project — inheritance, encapsulation, polymorphism — was learned under his guidance
+- This project would not exist without his support and dedication
+
+> *"The best teacher is the one who makes you believe you can build anything."*
+> — Thank you Sir Fahad Qureshi
+
+---
+
+## 👨‍💻 Developer
+
+**Muhammad Ibrahim**
+Built with JavaScript · HTML5 Canvas · OOP Architecture
+
+---
+
+## 📄 License
+
+This project is open source under the [MIT License](LICENSE).
