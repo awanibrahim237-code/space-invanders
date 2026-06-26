@@ -64,7 +64,7 @@ No terminal. No npm. No setup needed.
 ```
 space-invaders/
 │
-├── index.html        ← Full game (HTML + CSS + JavaScript in one file)
+├── spaceinvander.html        ← Full game (HTML + CSS + JavaScript in one file)
 ├── README.md         ← This file
 └── LICENSE           ← MIT License
 ```
